@@ -10,13 +10,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        createWeatherMessage();
+        createWeatherMessage(77);
     }
 
     /**
      * Create new message that specifies the city name and temperature.
      */
-    private String createWeatherMessage() {
-        return "Welcome to San Francisco where the temperature is 77 degrees";
+    private String createWeatherMessage(int temperature) {
+        return "Welcome to San Francisco where the temperature is " + temperature + "degrees Farenheit";
     }
 }
